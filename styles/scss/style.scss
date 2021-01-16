@@ -5,7 +5,7 @@ $color-black: #121725;
 $color-dark-gray: #2c344b;
 $color-medium-gray: #5a668a;
 $color-light-gray: #c2cbe5;
-$color: #fff;
+$color-white: #fff;
 
 *,
 *::after,
@@ -21,7 +21,69 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
+    box-sizing: border-box;
     font-family: 'Chivo', sans-serif;
-    background-color: $color-black;
+    min-height: 100vh;
     color: $color-light-gray;
+    text-align: center;
+    padding: 5.5rem 2.5rem;
+    background: linear-gradient(0deg, rgba($color-black, 0.9), rgba($color-black, 0.9)) no-repeat center / cover,
+        url(../../assets/mobile/image-host.jpg);
+}
+
+form input {
+    background-color: $color-dark-gray;
+    font-size: 1.4rem;
+    width: 100%;
+    display: inline-block;
+
+    &[placeholder] {
+        color: $color-white;
+        font-weight: 700;
+    }
+}
+
+form input,
+.btn {
+    border: none;
+    border-radius: 2.8rem;
+    padding: 1rem 3.2rem;
+    margin: 0.9rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.brand-logo {
+    width: 50%;
+    height: 50%;
+    margin: 4rem auto;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    color: $color-mint;
+    line-height: 1.6;
+
+    &__span {
+        color: $color-white;
+    }
+}
+
+.info {
+    line-height: 1.6;
+}
+
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img {
+        max-height: 1.5rem;
+        margin: 3.6rem 0.75rem;
+    }
+}
+
+.btn {
+    background-color: $color-mint;
+    color: $color-black;
 }
