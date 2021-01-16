@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+$color-mint: #54e6af;
+$color-black: #121725;
+$color-dark-gray: #2c344b;
+$color-medium-gray: #5a668a;
+$color-light-gray: #c2cbe5;
+$color: #fff;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-family: 'Chivo', sans-serif;
+    background-color: $color-black;
+    color: $color-light-gray;
+}
